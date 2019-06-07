@@ -1,0 +1,25 @@
+#faq {
+  .modal-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  h3 {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  p,
+  li {
+    font-size: 18px;
+  }
+  li {
+    margin-bottom: 5px;
+    line-height: 1.5em;
+  }
+  ul,
+  ol {
+    margin-bottom: 20px;
+  }
+ 
+}

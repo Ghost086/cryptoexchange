@@ -1,0 +1,158 @@
+.box.box {
+  padding: 22px 0 18px 10px;
+  overflow: hidden;
+
+  &.crypto {
+    padding: 10px 0 7px 10px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    padding: 18px 0 11px 30px;
+
+    &.crypto {
+      padding: 9px 0 8px 30px;
+    }
+  }
+}
+
+.box h5,
+.box h6 {
+  margin: 0;
+  text-transform: none;
+  color: $black;
+}
+
+.box h5 {
+  font-size: 16px;
+
+  @media (min-width: $screen-ms-min) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $screen-lg-min) {
+    margin-top: 4px;
+  }
+}
+
+.box h6 {
+  font-size: 12px;
+}
+
+:global .order-fiat .box.fiat h5 {
+  margin: 7px 0;
+
+  @media (min-width: $screen-lg-min) {
+    margin: 13px 0;
+  }
+}
+
+.tooltip {
+  text-align: left;
+}
+
+.media-left.media-left {
+  padding-right: 10px;
+  float: left;
+  width: 50px;
+  text-align: center;
+
+  @media (min-width: $screen-lg-min) {
+    padding-right: 30px;
+    width: 70px;
+  }
+}
+
+.media-right.media-right {
+  padding-right: 10px;
+  float: left;
+  width: calc(100% - 50px);
+
+  @media (min-width: $screen-lg-min) {
+    padding-right: 15px;
+    width: calc(100% - 70px);
+  }
+}
+
+.expansion-button {
+  display: block;
+  float: left;
+  cursor: pointer;
+  width: 100%;
+}
+
+.expansion-button.expansion-button-mobile {
+  display: none;
+
+  @media (max-width: 407px) {
+    display: block;
+  }
+}
+
+.address {
+  float: left;
+  max-width: calc(100% - 30px);
+}
+
+.row {
+  width: 100%;
+}
+
+.address-left {
+  width: 100%;
+  float: left;
+  word-wrap: break-word;
+}
+
+.address-left.deposit {
+  max-width: 96%;
+}
+
+.address-left.address-hidden {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.copybuttonright {
+  width: 4%;
+  float: right;
+}
+
+.copy {
+  position: relative;
+  color: $gray;
+  cursor: pointer;
+  right: -5px;
+}
+
+.coin {
+  position: relative;
+  top: -2px;
+  font-size: 30px;
+
+  @media (min-width: $screen-lg-min) {
+    top: -4px;
+    font-size: 40px;
+  }
+}
+
+.box.crypto .coin {
+  top: 10px;
+
+  @media (min-width: $screen-lg-min) {
+    top: 6px;
+  }
+}
+
+.col-sm-6.col-sm-6 {
+  @media (min-width: $screen-md-min) {
+    width: 46%;
+  }
+}
+
+.pull-right-md.pull-right-md {
+  @media (min-width: $screen-md-min) {
+    float: right;
+  }
+}
